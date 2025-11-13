@@ -9,14 +9,13 @@ def display_menu():
 def linear_search(data, target):
     for i, value in enumerate(data):
         if value == target:
-            return i   
-    return -1
+            return i 
+    return -1 
 
 # === Binary Search Function ===
 def binary_search(data, target):
     left, right = 0, len(data) - 1
     comparisons = 0
-
     while left <= right:
         mid = (left + right) // 2
         comparisons += 1
@@ -27,6 +26,7 @@ def binary_search(data, target):
         else:
             right = mid - 1
     return -1, comparisons
+
 # === Main Program ===
 def main():
     student_ids = [1001, 1005, 1002, 1008, 1003, 1010, 1004, 1009, 1007, 1012, 1006, 1011, 1013, 1015, 1014, 1016, 1018, 1017, 1020, 1019,]
@@ -50,7 +50,7 @@ def main():
             target = int(input("Enter Score to search: "))
             position, comparisons = binary_search(scores, target)
             if position != -1:
-                print(f"✅ Score {target} found at position {position}.")
+                print(f"✅ Score {target} found at position {position} comparisons made: {comparisons}")
             else:
                 print(f"❌ Score {target} not found.")
 
