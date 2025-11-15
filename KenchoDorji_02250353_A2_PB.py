@@ -1,6 +1,6 @@
 # ===Menu Display Function=== #
 def diaplay_menu():
-    print ("/n=== Sorting Alogorithms Menu ===")
+    print ("\n=== Sorting Alogorithms Menu ===")
     print("1. Bubble Sort-Sort Students Names")
     print("2. Insertion Sort-Sort Test Scores")
     print("3. Quick Sort-Sort Book Prices")
